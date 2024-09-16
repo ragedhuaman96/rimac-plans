@@ -1,0 +1,25 @@
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.semibold{
+    font-weight: 500;
+}
+
+.subtitle-14{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+
+.center-x{
+    justify-content: center;
+}

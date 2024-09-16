@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    margin: auto 10%;
+
+    &__info {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    &__phone {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    @include telefono {
+        margin: auto 1%;
+        &__text{
+            display: none;
+        }
+    }
+
+}

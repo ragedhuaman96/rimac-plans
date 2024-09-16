@@ -1,0 +1,47 @@
+.steps {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    background-color: #EDEFFC;
+    padding: 18px;
+
+    .divider {
+        color: #4F4FFF;
+        font-weight: 500;
+    }
+
+    .step {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        color: #7981B2;
+
+        &__number {
+            width: 24px;
+            height: 24px;
+            //styleName: Web/Title/Headline_20_Bold;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.4000000059604645px;
+            text-align: center;
+            padding: 4px;
+            border: 1px solid #7981B2;
+            border-radius: 50%;
+        }
+    }
+
+    .selected {
+        .step__number {
+            background-color: #4F4FFF;
+            color: #FFFFFF;
+        }
+
+        .step__name {
+            font-weight: 700;
+            color: #141938;
+
+        }
+    }
+}

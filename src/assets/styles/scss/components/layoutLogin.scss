@@ -1,0 +1,38 @@
+.layoutLogin{
+    display: flex;
+    flex-direction: column;  /* Coloca los hijos (header, content, footer) en columna */
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    &__content{
+        flex: 1
+    }
+
+    &__sideA{
+        position: absolute;
+        bottom: 0px;
+        z-index: -1000;
+    }
+
+    &__sideB{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: -1000;
+    }
+
+    @include telefono {
+        &__sideA{
+            position: absolute;
+            bottom: -160px;
+            left: -80px;
+        }
+    
+        &__sideB{
+            position: absolute;
+            right: -80px;
+            top: -350px;
+        }
+      }
+}

@@ -1,0 +1,13 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    /* Coloca los hijos (header, content, footer) en columna */
+    &__content {
+        flex: 1;
+        margin: auto 15%;
+
+        @include telefono {
+            margin: auto 5px
+        }
+    }
+}

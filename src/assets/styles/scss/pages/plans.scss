@@ -1,0 +1,206 @@
+.plans {
+    .planTypes {
+        width: 100%;
+        padding: 20px;
+        &__content {
+            width: 540px;
+            text-align: left;
+            margin-bottom: 15px 35px;
+            justify-content: center;
+
+            @include telefono {
+                width: 100%;
+            }
+
+            & .title {
+                //styleName: Web/Title_03/D_Bold_40px;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 48px;
+                letter-spacing: -0.6000000238418579px;
+
+                @include telefono {
+                    font-size: 28px;
+                }
+            }
+
+            & p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+                margin-top: 5px;
+                letter-spacing: 0.10000000149011612px;
+            }
+        }
+
+        &__types {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+
+            @include telefono {
+                flex-direction: column;
+                align-items: center;
+                margin: 15px
+            }
+        }
+
+        .cardType {
+            padding: 16px;
+            border-radius: 40px;
+            width: 256px;
+            height: 212px;
+            box-shadow: 0px 1px 32px 0px #AEACF359;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            cursor: pointer;
+
+            @include telefono {
+                width: 100%;
+            }
+
+            &__title {
+                //styleName: Web/Title/Headline13_Black;
+                font-size: 20px;
+                font-weight: 900;
+                line-height: 28px;
+                letter-spacing: -0.20000000298023224px;
+                text-align: left;
+            }
+
+            &__text {
+                //styleName: Web/Paragraph/Paragraph7_Reg;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.20000000298023224px;
+                text-align: left;
+            }
+
+            .checkbox {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                border: 1px solid #A9AFD9;
+                margin-left: auto;
+            }
+        }
+
+        .selected {
+            border: 3px solid #03050F;
+
+            .checkbox {
+                background-color: rgb(71, 149, 71);
+                border: none
+            }
+        }
+    }
+
+    .cardPlans {
+        padding: 40px;
+        gap: 20px;
+        display: flex;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+          
+        &::-webkit-scrollbar { 
+        display: none;
+        }
+        width: 100%;
+
+        .cardPlan {
+            width: 288px;
+            box-shadow: 0px 1px 32px 0px #AEACF359;
+            padding: 36px;
+            border-radius: 24px;
+            position: relative;
+            /* Permite posicionar elementos hijos en relación a este contenedor */
+            height: 668px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+
+            &__header {
+                //styleName: Web/Title/Headline11_Black;
+                font-size: 24px;
+                font-weight: 900;
+                line-height: 32px;
+                letter-spacing: -0.20000000298023224px;
+                text-align: left;
+                display: flex;
+                gap: 5px
+            }
+
+            &__price {
+                .text {
+                    font-size: 11px;
+                    font-weight: 900;
+                    line-height: 16px;
+                    letter-spacing: 0.6000000238418579px;
+                    text-align: left;
+                    color: #7981B2;
+                    margin-bottom: 5px;
+                }
+
+                .price {
+                    font-size: 20px;
+                    font-weight: 900;
+                    line-height: 28px;
+                    letter-spacing: -0.20000000298023224px;
+                    text-align: left;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid #D7DBF5
+                }
+            }
+
+            &__description {
+                padding: 15px 10px;
+                list-style-type: disc;
+                flex: 1;
+                margin-left: 15px;
+
+                // overflow-y: auto;
+                .item {
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0.10000000149011612px;
+                    text-align: left;
+                }
+            }
+
+            &__btn {
+                width: 220px;
+                height: 48px;
+                padding: 14px 32px 14px 32px;
+                gap: 0px;
+                border-radius: 32px;
+                opacity: 0px;
+                text-align: center;
+                background-color: #FF1C44;
+                //styleName: Web/Button/Button3;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: 0.4000000059604645px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__scroller{
+        display: flex;
+        gap: 70px;
+        justify-content: center;
+        width: 100%;
+        margin: 5px auto;
+        .icon{
+            padding:8px;
+            cursor: pointer;
+        }
+    }
+}
